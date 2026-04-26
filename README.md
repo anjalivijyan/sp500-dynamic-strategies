@@ -5,11 +5,11 @@ A quantitative study of dynamic portfolio strategies on **fifty years of S&P 500
 
 ## Project Overview & workflow
 
-1. **Data retrieval** — dividend-reinvested S&P 500 from `yfinance` and a synthetic USD bank account compounded daily from FRED Fed Funds rates.
-2. **Descriptive statistics** — full-sample (1976+) versus post-2010 sub-sample, with a peak-to-valley drawdown profile.
-3. **Black–Scholes proxy testing** — three independent tests of whether geometric Brownian motion is an adequate generative model for the S&P: the bracket identity $V_X \approx V_Y$, the linearity of $V_Y(t)$ in $t$, and the drift identity $E[X-Y] = \tfrac{1}{2}\sigma^2 dt$.
-4. **Constant-mix strategy** — derivation of the SDE on the discounted scale, closed-form solution, decomposition into Option Profile + Trading Impact, and validation for $l = 3$ (leveraged long), $l = -1$ (perpetual short), and $l = 1$ (buy-and-hold sanity check).
-5. **Doubling strategy ("when in trouble, double")** — state-dependent exposure rule, SDE solution, identification of the concave option profile, simulation with a leverage cap, and parameter sensitivity sweep.
+1. **Data retrieval** : dividend reinvested S&P 500 from `yfinance` and a synthetic USD bank account compounded daily from FRED Fed Funds rates.
+2. **Descriptive statistics** : full-sample (1976+) versus post 2010 subsample, with a peak to valley drawdown profile.
+3. **Black&Scholes proxy testing** : three independent tests of whether geometric Brownian motion is an adequate generative model for the S&P, the bracket identity $V_X \approx V_Y$, the linearity of $V_Y(t)$ in $t$, and the drift identity $E[X-Y] = \tfrac{1}{2}\sigma^2 dt$.
+4. **Constant mix strategy** :  derivation of the SDE on the discounted scale, closed form solution, decomposition into Option Profile + Trading Impact, and validation for $l = 3$ (leveraged long), $l = -1$ (perpetual short), and $l = 1$ (buy-and-hold sanity check).
+5. **Doubling strategy ("when in trouble, double")** : state dependent exposure rule, SDE solution, identification of the concave option profile, simulation with a leverage cap, and parameter sensitivity sweep.
 
 ## Key results
 
