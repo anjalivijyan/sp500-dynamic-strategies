@@ -13,12 +13,12 @@ A quantitative study of dynamic portfolio strategies on **fifty years of S&P 500
 
 ## Key results
 
-- **Recovered annualised volatility ~16%** from an OLS regression on the bracket process, matching the long-run S&P figure.
-- **Closed-form prediction matches daily simulation to within fractions of a percent** over fifty years and several orders of magnitude in wealth — a striking empirical confirmation of the Decomposition Theorem.
-- **B&S verdict**: workable as a first-order proxy, but volatility clustering in the variance residuals and decisively negative monthly skew rule it out as a generative model of risk.
-- **Constant-mix at $l = 3$** is wiped out by realised variance during 2008 — the formal version of the volatility decay that ruins synthetic leveraged ETFs (TQQQ, UPRO).
+- **Recovered annualised volatility ~16%** from an OLS regression on the bracket process, matching the long run S&P figure.
+- **Closed-form prediction matches daily simulation to within fractions of a percent** over fifty years and several orders of magnitude in wealth, a striking empirical confirmation of the Decomposition Theorem.
+- **B&S verdict**: workable as a first order proxy, but volatility clustering in the variance residuals and decisively negative monthly skew rule it out as a generative model of risk.
+- **Constant mix at $l = 3$** is wiped out by realised variance during 2008 the formal version of the volatility decay that ruins synthetic leveraged ETFs (TQQQ, UPRO).
 - **Doubling strategy** never reaches its target on the historical S&P path under realistic leverage caps, illustrating the practical impossibility of guaranteed wealth recovery once the gambler's wealth is bounded.
-- **The sign of trading impact is governed entirely by the convexity of the option profile**: concave profiles harvest gamma, convex profiles pay it. This explains why $0 < l < 1$ constant-mix and the doubling rule benefit from volatility while $l > 1$, $l < 0$, and unhedged leveraged ETFs bleed through it.
+- **The sign of trading impact is governed entirely by the convexity of the option profile**: concave profiles harvest gamma, convex profiles pay it. This explains why $0 < l < 1$ constant mix and the doubling rule benefit from volatility while $l > 1$, $l < 0$, and unhedged leveraged ETFs bleed through it.
 
 ## Takeaway
 
@@ -26,7 +26,7 @@ A strategy's path-dependent behaviour is fully encoded in the curvature of its t
 
 ## Theoretical reference
 
-Built on the Decomposition Theorem from N. Gaussel's *Advanced Topics in Financial Modelling* lecture notes (Université Paris 1 / Yukali, February 2024): any self-financing strategy of the form $dV_t = f(S_t)\, dS_t$ admits the path-by-path decomposition
+Built on the Decomposition Theorem from N. Gaussel's *Advanced Topics in Financial Modelling* lecture notes (Université Paris 1 / Yukali, February 2024): any self financing strategy of the form $dV_t = f(S_t)\, dS_t$ admits the path by path decomposition
 
 $$
 V_t - V_0 = \underbrace{F(S_t) - F(S_0)}_{\text{Option profile}} - \underbrace{\tfrac{1}{2}\int_0^t f'(S_s)\, S_s^2\, \sigma_s^2 \, ds}_{\text{Trading impact}}
