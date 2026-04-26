@@ -3,9 +3,7 @@
 ## Objective
 A quantitative study of dynamic portfolio strategies on **fifty years of S&P 500 data**, with closed-form theoretical predictions validated against daily rebalanced simulation. Built around the *Decomposition Theorem*, which expresses any self-financing dynamic strategy as a static option payoff plus a path-dependent gamma term.
 
-## Project Overview & workfow
-
-This notebook walks through five connected exercises on S&P 500 total-return data since 1976:
+## Project Overview & workflow
 
 1. **Data retrieval** — dividend-reinvested S&P 500 from `yfinance` and a synthetic USD bank account compounded daily from FRED Fed Funds rates.
 2. **Descriptive statistics** — full-sample (1976+) versus post-2010 sub-sample, with a peak-to-valley drawdown profile.
