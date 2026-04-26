@@ -1,4 +1,4 @@
-# S&P 500 Dynamic Strategies — Option Profile and Trading Impact
+# S&P 500 Dynamic Strategies - Option Profile and Trading Impact
 
 ## Objective
 A quantitative study of dynamic portfolio strategies on **fifty years of S&P 500 data**, with closed-form theoretical predictions validated against daily rebalanced simulation. Built around the *Decomposition Theorem*, which expresses any self-financing dynamic strategy as a static option payoff plus a path-dependent gamma term.
